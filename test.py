@@ -1,5 +1,6 @@
 import time
-n = int(input("Enter Interval"))
+import sys
+n = int(sys.argv[1])
 while n!=0:
     try:
         print ('Random Log')
