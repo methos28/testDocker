@@ -1,10 +1,9 @@
 import time
 import sys
-n = int(sys.argv[1])
+n = int(input("Enter Interval"))
+l = int(input("Enter No. of lines to Show at a time"))
 while n!=0:
-    try:
+    for x in range(n):
         print ('Random Log')
-        time.sleep(1)
-        n-=1
-    except:
-        print("Error")
+    n-=1
+    time.sleep(1)
