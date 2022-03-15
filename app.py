@@ -9,7 +9,7 @@ app = flask.Flask (__name__)
 
 @app.route('/', methods = ['GET'])
 def home():
-    dict_home = {'Page':'Home', 'Message':'API Request to home page', 'Timestamp':time.time()}
+    dict_home = {'Page':'Home', 'Message':'API Request to home page', 'Timestamp':time.time(), 'Other_Queries':'/nothome, /another'}
     json_dump = json.dumps(dict_home)
 
     return json_dump
