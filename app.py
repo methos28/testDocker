@@ -2,9 +2,6 @@ import flask
 import json
 import time
 
-
-from simplejson import dump
-
 app = flask.Flask (__name__)
 
 @app.route('/', methods = ['GET'])
@@ -29,4 +26,4 @@ def another():
     return json_dump
 
 if __name__ == '__main__':
-    app.run(port=5000)
+    app.run(port=7777)
